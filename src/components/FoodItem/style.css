@@ -1,0 +1,75 @@
+.fd_item {
+  width: 100%;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px #00000015;
+  transition: 0.3s;
+  animation: fadeIn 1s;
+}
+
+.fd_item .fi_img-container img:not(.fi_counter img) {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.fd_item .fi_info {
+  padding: 20px;
+}
+
+.fi_info .fi_name-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.fi_info .fi_name-rating p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.fi_info .fi_name-rating img {
+  width: 70px;
+}
+
+.description {
+  color: #676767;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.price {
+  color: tomato;
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.fi_counter {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.fi_counter img {
+  width: 30px;
+}
+
+.fd_item .fi_img-container {
+  position: relative;
+}
+
+.fd_item .fi_img-container img.add {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  max-width: 35px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
