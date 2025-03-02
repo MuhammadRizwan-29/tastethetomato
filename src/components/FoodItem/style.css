@@ -73,3 +73,39 @@
   margin-left: 10px;
   margin-top: 10px;
 }
+
+@media screen and (max-width: 650px) {
+  .fd_list {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    gap: 10px;
+    row-gap: 20px;
+  }
+  .fi_info .fi_name-rating {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .fi_info .fi_name-rating p {
+    font-size: 16px;
+  }
+  .fi_info .fi_name-rating img {
+    float: right;
+    margin-left: auto;
+  }
+  .fd_item .fi_info {
+    padding: 15px 10px;
+  }
+  .fi_counter {
+    gap: 5px;
+    padding: 6px;
+  }
+  .fi_counter img {
+    width: 20px;
+  }
+  .fi_counter p {
+    font-size: 14px;
+  }
+  .price {
+    font-size: 14px;
+  }
+} 

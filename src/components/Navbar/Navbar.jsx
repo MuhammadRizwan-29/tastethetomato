@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import { assets } from "./../../assets/assets";
 import { useState } from "react";
+import { Link } from "react-router";
 
 export default function Navbar() {
   const [menu, setMenu] = useState("home");
@@ -9,30 +10,34 @@ export default function Navbar() {
       <img src={assets.logo} alt="logo" className="logo" />
       <div className="navbar_menu">
         <ul>
-          <li
+          <Link
+            to="/"
             onClick={() => setMenu("home")}
             className={menu === "home" ? "active" : ""}
           >
             Home
-          </li>
-          <li
+          </Link>
+          <a
+            href="#food-display"
             onClick={() => setMenu("menu")}
             className={menu === "menu" ? "active" : ""}
           >
             Menu
-          </li>
-          <li
+          </a>
+          <a
+            href="#app-download"
             onClick={() => setMenu("mobile-app")}
             className={menu === "mobile-app" ? "active" : ""}
           >
             Mobile App
-          </li>
-          <li
+          </a>
+          <a
+            href="#footer"
             onClick={() => setMenu("contact-us")}
             className={menu === "contact-us" ? "active" : ""}
           >
             Contact Us
-          </li>
+          </a>
         </ul>
       </div>
       <div className="navbar_right">

@@ -40,3 +40,27 @@
   font-size: (1vw, 13px);
   border-radius: 50px;
 }
+
+@media screen and (min-width: 651px) and (max-width: 900px) {
+  .hero {
+    height: 50vh;
+  }
+  .hero_content {
+    max-width: 60%;
+  }
+  .hero_content p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero {
+    height: 40vh;
+  }
+  .hero_content {
+    max-width: 60%;
+  }
+  .hero_content p {
+    display: none;
+  }
+}

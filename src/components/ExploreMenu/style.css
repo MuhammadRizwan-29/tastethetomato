@@ -51,3 +51,14 @@
   border: 3px solid tomato;
   padding: 2px;
 }
+
+@media screen and (max-width: 650px) {
+  .explore_menu .menu_list {
+    gap: 15px;
+  }
+  .explore_menu p:not(.menu_list p) {
+    max-width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}

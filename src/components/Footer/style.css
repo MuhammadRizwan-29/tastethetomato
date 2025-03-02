@@ -40,3 +40,14 @@ footer hr {
   margin: 20px 0;
   background: rgb(185, 184, 184);
 }
+
+@media screen and (max-width: 650px) {
+  footer {
+    padding: 20px 15px;
+    padding-top: 40px;
+  }
+  footer .ft_wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
